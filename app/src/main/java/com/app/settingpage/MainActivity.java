@@ -1,5 +1,6 @@
 package com.app.settingpage;
 
+import android.content.Intent;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -26,7 +27,12 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        System.out.println(item.getItemId());
-        return super.onOptionsItemSelected(item);
+        switch (item.getItemId()) {
+            case R.id.setting_btn:
+                startActivity(new Intent(this, SettingsActivity.class));//開啟設定
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }

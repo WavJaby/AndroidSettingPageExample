@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">SettingPage</string>
+
+    <string name="deviceID_pref">Device ID</string>
+    <string name="deviceID_summary">Enter your device ID here</string>
+
+    <string name="line_chart_view_pref">Line chart view</string>
+    <string name="line_chart_view_summary">The view mode for line chart</string>
+    <string-array name="line_chart_view_entries">
+        <item>All</item>
+        <item>Soil moisture</item>
+        <item>Light</item>
+        <item>Temperature</item>
+        <item>Humidity</item>
+    </string-array>
+
 </resources>
